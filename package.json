@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "update": "nodemon bot.js"
+    "start": "node bot.js"
   },
   "author": "",
   "license": "ISC",
