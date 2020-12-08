@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "update": "nodemon bot.js"
+    "update": "nodemon bot.js",
     "start": "node bot.js"
   },
   "author": "",
