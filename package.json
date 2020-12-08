@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "update": "nodemon bot.js",
+    "postinstall": "npm run build",
     "start": "node bot.js"
   },
   "author": "",
