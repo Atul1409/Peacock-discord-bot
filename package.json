@@ -1,0 +1,27 @@
+{
+  "name": "raju",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "update": "nodemon bot.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "canvas-constructor": "^4.1.0",
+    "discord.js": "^12.5.1",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "figlet": "^1.5.0",
+    "fs": "0.0.1-security",
+    "mathjs": "^8.1.0",
+    "mongoose": "^5.11.4",
+    "nekos.life": "^2.0.7",
+    "random-anime": "^1.0.6",
+    "random-puppy": "^1.1.0",
+    "request": "^2.88.2",
+    "superagent": "^6.1.0"
+  }
+}
