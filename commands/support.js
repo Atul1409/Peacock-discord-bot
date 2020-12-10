@@ -9,7 +9,11 @@ module.exports.run = async(bot, message , args) => {
     .setDescription(`
      LIKE THIS BOT ? THEN PLEASE SUPPORT ME
 
-     MY Github - https://github.com/Atul1409
+    > [MY Github](https://github.com/Atul1409)
+
+    > [Invite Peacock in your server](https://discord.com/api/oauth2/authorize?client_id=784306314086973500&scope=bot)
+
+    > [Contribute to this bot's repo](https://github.com/Atul1409/Peacock-discord-bot)
 
     `)
 
