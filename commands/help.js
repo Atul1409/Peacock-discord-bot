@@ -1,37 +1,97 @@
 //const { Message } = require("discord.js");
 const Discord = require('discord.js');
+const paginationEmbed = require('discord.js-pagination');
 module.exports.run = async(bot, message , args) => {
     
 
-    const help = new Discord.MessageEmbed()
-    .setColor("GREEN")
-    .setTitle("Raju Commands")
-    .setDescription(`
-       • a.help → This panel
+    const help1 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Info").setDescription(` • a.help → This panel
+• a.ping →  Check  whether I am alive or dead
 
-    • a.ping →  Check  whether I am alive or dead
+• a.a → Your Avatar
 
-    • a.rip → Announce ur funeral
+• a.stats
 
-    • a.a → Your Avatar
+• a.aboutme
 
-    • a.avenger → makes u avenger
 
-    • a.calc → Solves ur sums , subtraction , multiplication , division
+• a.support
+
+   `);
+
+   const help2 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Fun").setDescription(`• a.rip
+
+   • a.ascii 
+   
+   • a.avenger
+   
+   • a.8ball  
     
-    • a.support → Support me!
+   • a.simp
 
-    • a.meme -> a random meme !
+   • a.meme
+   
+   `);
+   
+   
+   const help3 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Maths").setDescription(`• a.calc
+   `);
+
+   
+   const help4 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Weeb").setDescription(`• a.anime
+
+   • a.hentai
+   
+   • a.neko
     
-    • a.8ball -> Have a Question? ask me !
+   • a.smug
+   
+   • a.baka
 
-    • a.neko -> Random cat like weeb image :)
+   • a.tickle
+   
+   • a.slap
 
-    • a.kitty -> Random kitty images :)
+   • a.poke
+   
+   • a.nekoGif
+   
+   • a.kiss
 
-   `)
+   • a.hug
+   
+   • a.poke
+   
+   • a.nekoGif
+   
+   • a.cuddle
 
-  message.channel.send(help);
+   • a.kemonomimi
+   
+   • a.wallpaper
+
+   • a.fact
+
+   
+   `);
+   
+   
+   const help5 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Animals").setDescription(`• a.dog
+
+   • a.cat
+   `);
+   
+   
+
+   pages = [
+    help1,
+    help2,
+    help3,
+    help4,
+    help5
+];
+
+
+paginationEmbed(message, pages,['⏪', '⏩'],  92000000);
 }
 
 module.exports.help = {
