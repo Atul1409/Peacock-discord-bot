@@ -20,6 +20,7 @@
     "mongoose": "^5.11.4",
     "nekos.life": "^2.0.7",
     "random-anime": "^1.0.6",
+    "relevant-urban": "^2.0.0",
     "random-puppy": "^1.1.0",
     "request": "^2.88.2",
     "superagent": "^6.1.0"
