@@ -10,6 +10,7 @@ exports.run = async (bot , message, args) => {
         .setTitle(`hugs ${user.username} :>`)
 		.setImage(img)
 		.setColor('RANDOM')
+	        .setFooter('Powered by nekos.life')
 
 	message.channel.send(embed)
 }
