@@ -9,6 +9,7 @@ exports.run = async (bot , message, args) => {
         .setTitle('Nya!')
 		.setImage(img)
 		.setColor('RANDOM')
+	 .setFooter('Powered by nekos.life')
 
 	message.channel.send(embed)
 }
