@@ -10,7 +10,8 @@ exports.run = async (bot , message, args) => {
         .setTitle(`poking ${user.username}`)
 		.setImage(img)
 		.setColor('RANDOM')
-
+	 .setFooter('Powered by nekos.life')
+ 
 	message.channel.send(embed)
 }
 module.exports.help = {
