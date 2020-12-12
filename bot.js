@@ -1,11 +1,18 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client({disableEveryone: true });
-require('dotenv').config();
 
+require('dotenv').config();
 const fs = require("fs");
+const random = require("random");
+
+//let coins = require("./coins.json")
+
 
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
+
+var stats = {};
+
 
 fs.readdir("./commands/",(err,files) => {
     if(err) console.log(err);
@@ -36,7 +43,51 @@ bot.on("message",async message =>{
     if(message.author.id=== bot.user.id) return;
     let prefix = process.env.PREFIX;
 
+    /*if(!coins[message.author.id]){
+        coins[message.author.id] = {
+            coins:0
+        };
+    }
+     
+    let coinAmt = Math.floor(Math.random()*25)+1;
+    let baseAmt = Math.floor(Math.random()*25)+1;
+     console.log(`${coinAmt} ; ${baseAmt}`)
+    if(coinAmt===baseAmt){
+        coins[message.author.id] = {
+            coins: coins[message.author.id].coins + coinAmt
+        };
+
+    fs.writeFile("./coins.json", JSON.stringify(coins),(err) => {
+        if(err) console.log(err)
+    })
+    }*/
+
+    if (message.guild.id in stats === false){
+        stats[message.guild.id]={};
+    }
+
+    const guildStats =  stats[message.guild.id];
+
     
+    if (message.author.id in guildStats === false){
+         guildStats[message.author.id]={
+            xp:0,
+            level:0,
+            last_message:0
+        };
+    }
+
+    const userStats =  guildStats[message.author.id];
+    userStats.xp += random.int(15,25);
+
+    const xpToNextLevel = 5 * Math.pow(userStats.level,2) + 50 * userStats.level + 100;
+    if(userStats.xp >= xpToNextLevel){
+        userStats.level++;
+        userStats.xp = userStats.xp - xpToNextLevel ;
+        message.channel.send( message.author.username + " reached level " + userStats.level) 
+    }
+
+
 
 
     if(!message.content.startsWith(prefix)) return;
