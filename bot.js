@@ -3,7 +3,7 @@ const bot = new Discord.Client({disableEveryone: true });
 
 require('dotenv').config();
 const fs = require("fs");
-const random = require("random");
+//const random = require("random");
 
 //let coins = require("./coins.json")
 
@@ -40,7 +40,8 @@ bot.on("ready",async() => {
 })
 
 bot.on("message",async message =>{
-    if(message.author.id=== bot.user.id) return;
+    if(message.author.bot) return;
+    
     let prefix = process.env.PREFIX;
 
     /*if(!coins[message.author.id]){
@@ -60,7 +61,7 @@ bot.on("message",async message =>{
     fs.writeFile("./coins.json", JSON.stringify(coins),(err) => {
         if(err) console.log(err)
     })
-    }*/
+    }
 
     if (message.guild.id in stats === false){
         stats[message.guild.id]={};
@@ -88,7 +89,7 @@ bot.on("message",async message =>{
     }
 
 
-
+*/
 
     if(!message.content.startsWith(prefix)) return;
     let args = message.content.slice(prefix.length).trim().split(/ +/g);
