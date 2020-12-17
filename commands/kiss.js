@@ -3,7 +3,8 @@ const neko_client = require('nekos.life')
 const neko = new neko_client()
 let img, kiss , embed
 exports.run = async (bot , message, args) => {
-    const user = message.mentions.users.first() || message.author ;
+ const user = message.mentions.users.first() ;
+    if(!message.mentions.users.first()) return message.channel.send("pls mention someone")
 	kiss = await  neko.sfw.kiss()
 	img = kiss.url
     embed = new Discord.MessageEmbed()
