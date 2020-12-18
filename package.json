@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-  "axios": "^0.21.0",
+ "axios": "^0.21.0",
     "canvas-constructor": "^4.1.0",
     "discord-utilities-js": "^0.2.7",
     "discord.js": "^12.5.1",
@@ -25,11 +25,14 @@
     "mathjs": "^8.1.0",
     "mongoose": "^5.11.4",
     "nekos.life": "^2.0.7",
+    "node-fetch": "^2.6.1",
     "random": "^2.2.0",
     "random-anime": "^1.0.6",
     "random-puppy": "^1.1.0",
+    "reconlx": "^1.0.52",
     "relevant-urban": "^2.0.0",
     "request": "^2.88.2",
+    "string-progressbar": "^1.0.1",
     "superagent": "^6.1.0"
   }
 }
