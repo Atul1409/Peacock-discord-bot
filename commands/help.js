@@ -29,6 +29,8 @@ module.exports.run = async(bot, message , args) => {
 
    • a.meme
    
+   • a.tictactoe
+   
    `);
    
    
