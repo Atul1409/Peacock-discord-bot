@@ -4,7 +4,7 @@ const paginationEmbed = require('discord.js-pagination');
 module.exports.run = async(bot, message , args) => {
     
 
-    const help1 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Info").setDescription(` • a.help → This panel
+    const help1 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Peacock Commands').setTitle("Info").setDescription(` • a.help → This panel
 • a.ping 
 
 • a.a 
@@ -17,7 +17,7 @@ module.exports.run = async(bot, message , args) => {
 
    `);
 
-   const help2 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Fun").setDescription(`• a.rip
+   const help2 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Peacock Commands').setTitle("Fun").setDescription(`• a.rip
 
    • a.ascii 
    
@@ -34,11 +34,11 @@ module.exports.run = async(bot, message , args) => {
    `);
    
    
-   const help3 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Maths").setDescription(`• a.calc
+   const help3 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Peacock Commands').setTitle("Maths").setDescription(`• a.calc
    `);
 
    
-   const help4 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Weeb").setDescription(`• a.anime
+   const help4 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Peacock Commands').setTitle("Weeb").setDescription(`• a.anime
 
    • a.hentai
    
@@ -67,7 +67,7 @@ module.exports.run = async(bot, message , args) => {
    `);
    
    
-   const help5 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Raju Commands').setTitle("Animals").setDescription(`• a.dog
+   const help5 = new Discord.MessageEmbed().setColor("GREEN").setAuthor('Peacock Commands').setTitle("Animals").setDescription(`• a.dog
 
    • a.cat
 
