@@ -36,7 +36,7 @@ fs.readdir("./commands/",(err,files) => {
 
 bot.on("ready",async() => {
     console.log(`${bot.user.username} is online on ${bot.guilds.cache.size} servers!`)
-    bot.user.setActivity(`with  ${bot.guilds.cache.size} servers!`)
+    bot.user.setActivity(`Playing in ${bot.guilds.cache.size} servers!`, { type: 'STREAMING' });
 })
 
 bot.on("message",async message =>{
