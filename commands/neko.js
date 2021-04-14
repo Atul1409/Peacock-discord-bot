@@ -5,6 +5,7 @@ let img, nek , embed
 exports.run = async (bot , message, args) => {
 	nek = await neko.sfw.neko()
 	img = nek.url
+	if (!message.channel.nsfw) return message.channel.send('NO nsfw here!')
     embed = new Discord.MessageEmbed()
         .setTitle('Nya!')
 		.setImage(img)
