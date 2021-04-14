@@ -6,6 +6,7 @@ exports.run = async (bot , message, args) => {
     const user = message.mentions.users.first() || message.author ;
 	wal = await  neko.sfw.wallpaper()
 	img = wal.url
+	if (!message.channel.nsfw) return message.channel.send('NO nsfw here!')
     embed = new Discord.MessageEmbed()
         .setTitle(`:}`)
 		.setImage(img)
